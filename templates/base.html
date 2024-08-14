@@ -15,7 +15,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    {% block content %} {% endblock content %}
-    {% include "scripts.html" %}
+    <div class="max-w-7xl">
+      {% include "navbar.html" %}
+      {% block content %} {% endblock content %} {% include "scripts.html" %}
+    </div>
   </body>
 </html>
